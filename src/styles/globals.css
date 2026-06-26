@@ -1,8 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #7b8c9c;
+  --foreground: #7b8c9c;
+}
+
+*, *::before, *::after {
+  cursor: none !important;
+}
+
+a {
+    cursor: url('/cursor-hover.png')
+}
+
+@font-face {
+	font-family: 'Gallant';
+	src: url('/gallant.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html *
+{
+    font-family: 'Gallant'
 }
 
 @theme inline {
@@ -14,8 +34,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #7b8c9c;
+    --foreground: #7b8c9c;
   }
 }
 
